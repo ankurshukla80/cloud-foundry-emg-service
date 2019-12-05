@@ -9,7 +9,7 @@ module.exports.init = function(config, logger, stats) {
     onrequest: function(req, res, data, next) {
 
       var adr = req.headers['x-cf-forwarded-url'];
-      console.log("Adr"+ adr);
+      console.log("Adr : "+ adr);
       if(adr != null)
       {
         var addressParsed = url.parse(adr, true);
