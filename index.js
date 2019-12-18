@@ -1,5 +1,4 @@
 'use strict';
-var debug = require('debug')
 var url = require('url');
 
 module.exports.init = function(config, logger, stats) {
